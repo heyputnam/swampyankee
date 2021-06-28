@@ -12,7 +12,7 @@ font-size: 0.8rem;
 line-height: 0.8;
 width: 100%;
 z-index: 1;
-/* background-color: #FE6969; */
+background-color: white;
 
 color: black;
 display: flex;

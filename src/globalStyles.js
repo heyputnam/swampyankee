@@ -1,7 +1,7 @@
 import * as React from "react"
 import { createGlobalStyle } from "styled-components"
 import Footer from './components/footer'
-import Header from './components/header'
+import PageHeader from './components/header'
 
 
 
@@ -84,9 +84,9 @@ const Layout = ({children}) => {
     return(
         <>
     <GlobalStyle/>
-<Header/>
-         <div>{children}</div> 
-  <Footer/>
+    <PageHeader/>
+       {children}
+<Footer/>
         </>
     )
 }

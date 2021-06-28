@@ -4,9 +4,13 @@ import rod from '../images/rod.png'
 import dots from '../images/menudots.png'
 
 const Head = styled.div`
-top: 0;
-left: 0;
 position: fixed;
+left: 0;
+right: 0;
+top: 0;
+background: white;
+height: 3rem;
+z-index: 1;
 
 `
 
@@ -27,9 +31,11 @@ h3{
 `
 
 const Left = styled.div`
+
 position: fixed;
 left: 0;
 padding-top: 0.5rem;
+z-index: 1;
 
 
 a{
@@ -65,6 +71,7 @@ position: fixed;
 
 img{
     margin-top: -0.5rem;
+ 
     cursor: pointer;
 }
 
@@ -89,11 +96,12 @@ a{
     margin-top: 0.5rem;
 }
 `
-const PageHeader = () => {
+const PageHeader = ({children}) => {
     return(
    
-       <>
-       <Head>
+  <>
+       <Head> 
+       
      
                <Left>
         <Logo>
@@ -119,8 +127,8 @@ const PageHeader = () => {
                </Right>
     
        </Head>
- 
-       </>
+ {children}
+</>
     )
 }
 

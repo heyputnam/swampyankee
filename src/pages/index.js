@@ -6,7 +6,10 @@ import PageHeader from '../components/header'
 const IndexPage = ({children}) => {
   return(
     <>
-  <PageHeader></PageHeader>
+<Layout>
+
+  
+</Layout>
     </>
   )
 }

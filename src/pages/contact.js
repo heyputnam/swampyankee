@@ -1,15 +1,17 @@
 import * as React from "react"
 import Layout from '../globalStyles'
 
-const IndexPage = ({children}) => {
+
+
+const Contact = ({children}) => {
   return(
     <>
 <Layout>
-
-
+<p>contact</p>
+  
 </Layout>
     </>
   )
 }
 
-export default IndexPage;
+export default Contact;

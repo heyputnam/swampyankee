@@ -31,6 +31,12 @@ position: fixed;
 left: 0;
 padding-top: 0.5rem;
 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 `
 
 const Right = styled.div`
@@ -92,18 +98,18 @@ const PageHeader = () => {
                <Left>
         <Logo>
             <img src={rod} alt="logo" width="40px" height="35px"></img>
-            <h3>Swamp Yankee Custom Rods</h3>
+           <a href="/"><h3>Swamp Yankee Custom Rods</h3></a>
         </Logo>
                </Left>
                <Right>
                    <NavItems>
-                   <a href="#" className="contact">Contact</a>    
+                   <a href="/contact" className="contact">Contact</a>    
                    <DropDown>
                     <img src={dots} width="25px" height="25px"></img>
                     <div className="content">
-                    <a href="#">About Us</a>
-                    <a href="#">Custom Designs</a>
-                    <a href="#">Rod Gallery</a>
+                    <a href="/about">About Us</a>
+                    <a href="/customwork">Custom Designs</a>
+                    <a href="gallery">Rod Gallery</a>
                     </div>
                     </DropDown>
           

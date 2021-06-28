@@ -1,15 +1,17 @@
 import * as React from "react"
 import Layout from '../globalStyles'
 
-const IndexPage = ({children}) => {
+
+
+const About = ({children}) => {
   return(
     <>
 <Layout>
-
-
+<p>about</p>
+  
 </Layout>
     </>
   )
 }
 
-export default IndexPage;
+export default About;

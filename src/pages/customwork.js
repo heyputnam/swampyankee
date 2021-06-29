@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from '../globalStyles'
 import styled from 'styled-components'
 import Slider from '../components/imageSlider'
-import SelectForm from '../components/form'
+import SelectForm from '../components/selectForm'
 const Content = styled.div`
 height: 75vw;
 z-index: 2;

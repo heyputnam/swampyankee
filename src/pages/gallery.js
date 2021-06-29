@@ -1,23 +1,64 @@
 import * as React from "react"
 import Layout from '../globalStyles'
 import styled from 'styled-components'
+import ImageGallery from '../components/imageGallery'
+import {graphql} from 'gatsby'
+import { useStaticQuery } from 'gatsby'
 const Content = styled.div`
 height: 75vw;
 z-index: 2;
+margin-top: 10rem;
+
+`
+const Title = styled.div`
+background: white;
+z-index: 1;
 margin-top: 3rem;
+padding-bottom: 2rem;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+text-align: center;
 
 `
 
-const Gallery = ({children}) => {
+const GalleryPage = ({children, images}) => {
+const query = useStaticQuery(graphql`
+query MyQuery {
+  allFile {
+    nodes {
+      childImageSharp {
+        fixed {
+          src
+        }
+      }
+    }
+  }
+}
+
+`)
+const data = query.allFile.nodes.map(q=>{
   return(
+    q.childImageSharp.fixed.src
+  )
+})
+  console.log(data)
+
+  return(
+    
     <>
 <Layout>
+<Title>
+  <h1>Design Gallery</h1>
+</Title>
     <Content>
-<p>gallery</p>
+
+<ImageGallery images={data}/>
   </Content>
 </Layout>
     </>
   )
 }
 
-export default Gallery;
+export default GalleryPage;

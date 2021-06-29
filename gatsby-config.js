@@ -4,6 +4,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/src/gallery`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: "WU40ps_2oszl_1AohokPY-KB8QkIH7Sj54DMGAIowDw",

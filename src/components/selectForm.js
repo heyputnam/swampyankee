@@ -3,9 +3,6 @@ import styled from'styled-components'
 
 
 const SelectForm = () => {
-
-
-
     return(     
         <>   
     <form action="https://getform.io/f/db517dd9-a2fd-4808-a101-767864f0dc1e" method="POST">

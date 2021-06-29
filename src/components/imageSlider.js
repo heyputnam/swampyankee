@@ -14,6 +14,7 @@ height: auto;
 
 
 `
+// replace with actual pictures for slider
 const items = [
     <img src="https://miro.medium.com/max/600/0*NsfFeu-AcAPlBl6z.png"/>,
     <img src="https://miro.medium.com/max/1280/0*09J7DozpiBdYccOR.png" />,

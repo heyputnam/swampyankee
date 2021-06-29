@@ -117,7 +117,7 @@ const PageHeader = ({children}) => {
                     <div className="content">
                     <a href="/about">About Us</a>
                     <a href="/customwork">Custom Designs</a>
-                    <a href="gallery">Rod Gallery</a>
+                    <a href="/gallery">Rod Gallery</a>
                     </div>
                     </DropDown>
           

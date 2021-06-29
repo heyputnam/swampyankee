@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from '../globalStyles'
 import styled from 'styled-components'
 import Slider from '../components/imageSlider'
+import SelectForm from '../components/form'
 const Content = styled.div`
 height: 75vw;
 z-index: 2;
@@ -35,10 +36,14 @@ const CustomWork = ({children}) => {
 <Slider/>
  
     <Description>
-
+ <SelectForm/>
     </Description>
+
+        
 </Custom>
 </Content>
+
+        
 </Layout>
     </>
   )

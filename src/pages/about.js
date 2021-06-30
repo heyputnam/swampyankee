@@ -1,6 +1,9 @@
 import * as React from "react"
 import Layout from '../globalStyles'
 import styled from 'styled-components'
+import dad from '../images/dad.jpg'
+import SimpleReactLightbox from 'simple-react-lightbox'
+import { SRLWrapper } from 'simple-react-lightbox';
 const Content = styled.div`
 /* height: 75vw; */
 z-index: 2;
@@ -15,34 +18,68 @@ margin: 10% 10rem 1rem 10rem;
 `
 const Photo = styled.div`
 margin-right: 3rem;
-margin-top: 6.5rem;
+/* margin-top: 6.5rem; */
 img{
-    width: 15rem;
+    width: 25rem;
 }
 `
 
 const Paragraph = styled.div`
 
 p{
-margin-left: 8rem;
-width: 70%;
+
+margin-left: 2rem;
+text-align: center;
+width: 90%;
 }
 `
 
 const Title = styled.h4`
+margin-top: -3.5rem;
 text-align: center;
-padding-bottom: 0.8rem;
-font-size: 3rem;
+padding-bottom: 1.6rem;
+font-size: 4.5rem;
 
 `
 const About = ({children}) => {
+    const options = {
+        settings: {
+          overlayColor: "rgba(0, 0, 0, 0.8)",
+          autoplaySpeed: 1500,
+          transitionSpeed: 900,
+          
+          
+        },
+        buttons: {
+          backgroundColor: "black",
+          iconColor: "white",
+          showDownloadButton: false,
+          showThumbnailsButton: false,
+          showAutoplayButton: false,
+          showCloseButton: true,
+          showFullscreenButton: false,
+          showNextButton: false,
+          showPrevButton: false,
+        },
+        caption: {
+          showCaption: false,
+        },
+        thumbnails: {
+            showThumbnails: false,
+        }
+      }; 
   return(
     <>
 <Layout>
+    <SimpleReactLightbox>
 <Content>
     <AboutBlock>
+
         <Photo>
-    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="placeholder"></img>
+            <SRLWrapper options={options}>
+    <img src={dad} alt="dad profile 
+    image"></img>
+    </SRLWrapper>
         </Photo>
         <Paragraph>
             <Title>Jonathan Putnam</Title>
@@ -53,6 +90,7 @@ const About = ({children}) => {
         </Paragraph>
     </AboutBlock>
 </Content>
+</SimpleReactLightbox>
 </Layout>
     </>
   )

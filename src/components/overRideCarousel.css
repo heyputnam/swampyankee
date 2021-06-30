@@ -1,13 +1,13 @@
 .alice-carousel{
     /* height: 20rem; */
-    width: 26rem;
+    width: 39rem;
 
 
 }
 
 .img{
    justify-content: center;
-    width: 13rem;
+    width: 36rem;
     padding: 2rem;
 
    
@@ -22,11 +22,15 @@ li{
 }
 
 .alice-carousel__dots-item:not(.__custom) {
-    background: black;
-    width: 15px;
-    height: 15px;
+    background: rgb(133, 131, 131);
+    width: 7px;
+    height: 7px;
+    margin-top: -3rem;
+    margin-bottom: 1rem;
 }
 
 .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active{
-    background: white;
+    background: black;
+   
+    ;
 }

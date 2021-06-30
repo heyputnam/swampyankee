@@ -1,11 +1,30 @@
 import * as React from 'react'
 import styled from'styled-components'
+const Container = styled.div`
+margin-bottom: 7rem;
+input{
+  width: 10rem;
+  height: 1.7rem;
+}
 
+select{
+  width: 10rem;
+  height: 1.7rem;
+}
+.other{
+  width: 25%
+}
+.otherIn{
+  width: 18rem;
+ height: 3rem;
+}
+`
 
 const SelectForm = () => {
     return(     
-        <>   
-    <form action="https://getform.io/f/db517dd9-a2fd-4808-a101-767864f0dc1e" method="POST">
+        <>  
+        <Container>
+    <form action="https://getform.io/f/db517dd9-a2fd-4808-a101-767864f0dc1e" method="POST" style={{display: "flex" ,flexDirection: "column" ,  height:"10rem"}}>
 <label>Name:</label>
 <input type="text" name="name" />
 <label>Email:</label>
@@ -97,11 +116,12 @@ const SelectForm = () => {
               <option>none</option>
             </select>
           </div>
-<label>if you selected "other", please include breif description of your idea! </label>
-<input type="text" name="otherDetails"/>
+<label className="other">if you selected "other", please include breif description of your idea! </label>
+<input className="otherIn" type="text" name="otherDetails"/>
 <br/>
 <button type="submit">Send</button>
 </form>
+</Container> 
         </>    
     )
 }

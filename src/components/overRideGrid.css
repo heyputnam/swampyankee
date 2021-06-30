@@ -2,18 +2,19 @@
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
-    margin: -2.5px; }
+   }
     .flexbin:after {
       content: '';
       flex-grow: 999999999;
-      min-width: 400px;
+      min-width: auto;
       height: 0; }
     .flexbin > * {
       position: relative;
       display: block;
-      height: 300px;
-      
-      margin: 2.5px;
+      height: auto;
+      max-height: 350px;
+      min-height: 100px;
+      margin: 4px;
       flex-grow: 1; }
       .flexbin > * > img {
         height: 100%;

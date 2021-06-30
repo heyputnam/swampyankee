@@ -7,7 +7,7 @@ import { SRLWrapper } from 'simple-react-lightbox';
 const Content = styled.div`
 /* height: 75vw; */
 z-index: 2;
-margin-top: 3rem;
+margin-top: 2rem;
 
 `
 
@@ -27,7 +27,7 @@ img{
 const Paragraph = styled.div`
 
 p{
-
+margin-top: -1.5rem;
 margin-left: 2rem;
 text-align: center;
 width: 90%;
@@ -35,7 +35,7 @@ width: 90%;
 `
 
 const Title = styled.h4`
-margin-top: -3.5rem;
+margin-top: -4.5rem;
 text-align: center;
 padding-bottom: 1.6rem;
 font-size: 4.5rem;
@@ -84,8 +84,10 @@ const About = ({children}) => {
         <Paragraph>
             <Title>Jonathan Putnam</Title>
         <p>
-        Chickens in the sack I woke next morning 'bout half past nine sun would never shine where the sun never shines, gravy. Steel driving crew! Troublin' mind. Went a court'n down to the river scratching out dough. Don't belong to you! Hoecake one arm round my whiskey keg hang your head and cry walking boss, the other one round my girl gravy sugar baby milked her in a gourd o'er Jordan died when I was young she's a pretty bird wheel hoss. Black as coal the other one round my girl. Sittin' on top o' the world went a court'n rolling down the track traveling through this world of woe?
-        Poor boy what I had done Sally Ann. In my sweet baby's arms walking boss, hellhounds on my track seaport town. Pickle my bones in alcohol where the sun never shines, coming down the track poor boy you've robbed my poor pocket turkey in the straw pretty girl mule skinner the sooner I will marry buried in the ground. Hellhounds on my track, she's a pretty bird ain't laid an egg since way last spring. Rye whiskey going to town shady grove, five dollars! Uncle John lonesome aces backed with eights, down to the river when I'm gone, aces backed with eights soldier's joy pretty girl hellhounds on my track.
+        Jonathan Putnam started Swamp Yankee Custom Rods, with 20+ years of rod building experience under his belt. First learning the basics as a younger man and then practicing and perfecting the techniques later in life. As an avivide fishman himself for over 50+ years, you can trust your fishing rod needs are in experienced hands. All rod’s are hand crafted with precision and an eye for detail. Feeling most himself while on the water, whether it’s flat’s fishing or deep sea, Jonathan has done it all, and had a number of notable catches over the years, including a massive white marlien off the coast of Mexico. After a number of health issues over the years and recently becoming an amputee, Jonathan pivoted and began creating custom fishing rods first as a hobby but then began to sell his work to the public after the response from  friends and family. Previous to starting Swamp Yankee Custom Rods, Jonathan was also the founder and owner of Putnam Construction and has extensive knowledge in new construction and historical restoration. He also studied to be a chef at Johnson & Wales, and has been the head chef at multiple restaurants on the east and west coast. When he’s not creating in his artist loft, Jonathan can usually be found either outside tending to his garden and orchard or in the kitchen cooking for his family. 
+
+Whether you are looking for a custom rod for yourself or as a gift for someone else, let Jonathan create your one of a kind handcrafted rod. 
+
         </p>
         </Paragraph>
     </AboutBlock>

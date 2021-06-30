@@ -6,19 +6,14 @@ import {graphql} from 'gatsby'
 import { useStaticQuery } from 'gatsby'
 const Content = styled.div`
 height: 75vw;
-z-index: 2;
-margin-top: 10rem;
+z-index: 3;
+/* margin-top: 10rem; */
 
 `
 const Title = styled.div`
 background: white;
-z-index: 1;
 margin-top: 3rem;
-padding-bottom: 2rem;
-position: fixed;
 width: 100%;
-top: 0;
-left: 0;
 text-align: center;
 
 `

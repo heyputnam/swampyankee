@@ -54,7 +54,7 @@ right: 0;
 const NavItems = styled.div`
 margin-top: 1rem;
 margin-right: 2rem;
-
+z-index: 1;
 a{
     color: black; 
     text-decoration: none;
@@ -68,6 +68,7 @@ const DropDown = styled.div`
 display: inline-block;
 height: 100%;
 position: fixed;
+z-index: 1;
 
 img{
     margin-top: -0.5rem;
@@ -78,10 +79,13 @@ img{
 &:hover a{
     display: block;
     margin-right: 7rem;
+    
 }
 
 
 .content{
+    position: fixed;
+ 
     display: flex;
     flex-direction: column;
     width: 8rem;
@@ -94,6 +98,7 @@ a{
     display: none;
     width: 100%;
     margin-top: 0.5rem;
+    
 }
 `
 const PageHeader = ({children}) => {

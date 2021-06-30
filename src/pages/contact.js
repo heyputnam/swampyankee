@@ -3,12 +3,15 @@ import Layout from '../globalStyles'
 import styled from 'styled-components'
 import ContactForm from '../components/contactForm'
 import bigTop from '../images/bigTop.jpg'
+import rod from '../images/rod.jpg'
 const Content = styled.div`
-/* height: 75vw; */
-z-index: 2;
+/* height: 20vw; */
+width: 100%;
+z-index: 1;
 margin-top: 27%;
+margin-left: 33%;
 /* height: 5vw; */
-/* position: fixed; */
+position: relative;
 `
 const BigTop = styled.div`
 position: fixed;
@@ -38,7 +41,7 @@ const Contact = ({children}) => {
     <>
 <Layout>
 <BigTop>
-  <img src={bigTop}></img>
+  <img src={rod}></img>
   <h1>Contact Us: </h1>
   </BigTop>
 <Content>

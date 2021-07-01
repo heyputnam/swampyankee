@@ -75,7 +75,7 @@ const Contact = ({children}) => {
   <Content1>
   <div>
     <h3>phone: </h3>
-    <p>850-510-5724</p>
+    <p>443-821-3927</p>
   </div>
   <div>
     <h3>email: </h3>

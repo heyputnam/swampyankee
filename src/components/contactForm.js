@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const Container = styled.div`
-margin-top: -3.5rem;
+margin-top: -4.6rem;
 display: flex;
 flex-direction: row;
 position: fixed;
@@ -11,9 +11,10 @@ position: fixed;
 padding: 1.6em;
 width: 31rem;
 border-radius: 15px;
-height: 18rem;
-background: #EEEEF1;
-box-shadow: 0px 2px 15px black;
+height: 19rem;
+background: #FAF9F9;
+box-shadow: 2px 2px 15px white;
+  filter: drop-shadow(1px 1px 1px black);
 /* margin-top: 5rem; */
 /* height: 50rem; */
 
@@ -31,12 +32,14 @@ display: flex;
 flex-direction: row;
 margin-bottom: 1.5rem;
 input{
-    
+    box-shadow: 2px 2px 15px white;
+  filter: drop-shadow(1px 1px 1px black);
     width: 250px;
     margin-left: 3rem;
     border: none;
     border-radius: 15px;
     height: 25px;
+    padding: 1rem;
 }
 
  .message{
@@ -60,22 +63,21 @@ margin-left: 2rem;
 font-size: 2rem;
 
 button{
-background: #9E9EA0;
+background: #DBBF96;
 font-size: 1rem;
+
 margin-top: 1rem;
 border-radius: 20px;
 cursor: pointer;
 padding: 0.7rem 2.3rem;
-
+margin-left: -1rem;
 &:hover{
-/* padding: 0.8rem 2.3rem; */
-background: orange;
-transform: scale(1.3);
-transition: scale( 2s ease-in-out);
-border-radius: 30px;
-background: #7C7C81;
-box-shadow: 2px 2px 15px #606063;
-}
+    box-shadow: 1px 1px 10px #CDCCCC;
+  filter: drop-shadow(0px 0px 0px #CDCCCC);
+  transition: box-shadow 250ms ease-in 300ms ease-out;
+  transform: scale(1.2);
+  transition: scale 2s ease-in-out;
+  }
 }
 
 `

@@ -88,16 +88,26 @@ img{
     background: white;
     display: flex;
     flex-direction: column;
-    width: 12rem;
+    width: 14rem;
     margin-top: 0rem;
-  right: 0;
+    right: 0;
+    font-size: 1.2rem;
     
 }
 
 a{
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: none;
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+
+    &:hover{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        transform: scale(1.2);
+    }
     
 }
 `

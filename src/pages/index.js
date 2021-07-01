@@ -3,18 +3,34 @@ import Layout from '../globalStyles'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import styled from 'styled-components'
-
+import front from '../images/front.jpg'
 const Content = styled.div`
 /* height: 75vw; */
 z-index: 2;
 margin-top: 3rem;
 display: flex;
+
 justify-content: center;
+img{
+position: fixed;
+margin-top: -15rem;
+height: 70rem;
+width: 100%;
+
+}
 `
 
 const Title = styled.div`
-margin-top: 20%;
+position: fixed;
+display: flex;
 text-align: center;
+margin-top: 12%;
+color: white;
+font-size: 2rem;
+/* h1{
+  position: fixed;
+  
+} */
 
 `
 const IndexPage = ({children}) => {
@@ -23,11 +39,13 @@ const IndexPage = ({children}) => {
 <Layout/>
 
 <Content>
+<img src={front}></img>
   <Title>
-<h1>Welcome to Swamp Yankee Custom Fishing Rods</h1>
-<p>were we make all your wildest custom rod dreams come true.</p>
+
+<h1>Swamp Yankee Custom Fishing Rods</h1>
+
 </Title>
-<Footer/>
+
 </Content>
 
     </>

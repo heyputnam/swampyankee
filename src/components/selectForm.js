@@ -5,7 +5,7 @@ const Container = styled.div`
 display: flex;
 
 padding: 3rem;
-background: #EEEEF1;
+background: #FAF9F9;
 border-radius: 30px;
 height: auto;
 text-align: right;
@@ -63,6 +63,23 @@ select{
  height: 6rem;
 
 
+}
+
+button{
+  background: #DBBF96;
+  height: 2.5rem;
+  width: 9rem;
+  margin-left: 33.5%;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 1px 1px 10px #CDCCCC;
+  filter: drop-shadow(0px 0px 0px #CDCCCC);
+  transition: box-shadow 250ms ease-in 300ms ease-out;
+  transform: scale(1.2);
+  transition: scale 2s ease-in-out;
+  }
 }
 `
 

@@ -13,7 +13,7 @@ line-height: 0.8;
 width: 100%;
 z-index: 1;
 background-color: white;
-
+font-size: 0.7rem;
 color: black;
 display: flex;
 justify-content: space-between;
@@ -39,15 +39,23 @@ flex-direction: row;
 justify-content: space-between;
 margin-top: 0.5rem;
 
+a:hover{
+    transform: scale(1.3);
+    transition: scale 200ms ease-in;
+}
+
 a:not(:last-child){
 margin-right: 3rem;
+
 }
 a:last-child{
 margin-right: 0.7rem;
 }
 img{
-    width: 1.4rem;
+    width: 1rem;
     margin-bottom: 0.5rem;
+
+   
     }
 `
 

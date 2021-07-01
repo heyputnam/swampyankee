@@ -12,13 +12,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        accessToken: "WU40ps_2oszl_1AohokPY-KB8QkIH7Sj54DMGAIowDw",
-        spaceId: "hihxahgggvoe",
-      },
-    },
+   
+
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
   ],

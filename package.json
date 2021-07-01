@@ -19,7 +19,6 @@
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-sharp": "^3.8.0",
     "gatsby-plugin-styled-components": "^4.8.0",
-    "gatsby-source-contentful": "^5.8.0",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.8.0",
     "photo-grid": "^1.0.0",

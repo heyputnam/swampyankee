@@ -1,3 +1,9 @@
+
+
+img:hover{
+  cursor: pointer;
+}
+
 .flexbin {
     display: flex;
     overflow: hidden;
@@ -9,6 +15,7 @@
       min-width: auto;
       height: 0; }
     .flexbin > * {
+     
       position: relative;
       display: block;
       height: auto;
@@ -17,6 +24,7 @@
       margin: 4px;
       flex-grow: 1; }
       .flexbin > * > img {
+     
         height: 100%;
         object-fit: scale-down;
         max-width: 100%;

@@ -12,6 +12,10 @@
 
    
 }
+
+.img:hover{
+    cursor: pointer;
+}
 .alice-carousel__next-btn-item , .alice-carousel__prev-btn-item{
     display: none; 
     

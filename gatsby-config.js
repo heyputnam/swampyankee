@@ -4,10 +4,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/src/gallery`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "7CSOK4qBBkca1W3SwMZ0QS6I8NEpmTCuzdLt4PUzqac",
-        spaceId: "7pyo7lilug8d",
+        accessToken: "WU40ps_2oszl_1AohokPY-KB8QkIH7Sj54DMGAIowDw",
+        spaceId: "hihxahgggvoe",
       },
     },
     "gatsby-plugin-styled-components",

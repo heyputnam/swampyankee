@@ -85,12 +85,12 @@ img{
 
 .content{
     position: fixed;
- 
+    background: white;
     display: flex;
     flex-direction: column;
-    width: 8rem;
-    margin-top: 0.5rem;
-    margin-left: -6.5rem;
+    width: 12rem;
+    margin-top: 0rem;
+  right: 0;
     
 }
 

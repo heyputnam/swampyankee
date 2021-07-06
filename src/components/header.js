@@ -18,8 +18,23 @@ const Logo = styled.div`
 display: flex;
 margin-left: 1rem;
 flex-direction: row;
+
+@media only screen and (max-width: 600px){
+    img{
+        display: none;
+    }
+
+    h3{
+        font-size: 12px !important;
+        letter-spacing: 1px !important;
+        line-height: 3 !important;
+        margin-left: -0.7rem !important;
+    }
+}
 img{
     width: 2em;
+
+
 }
 h3{
     margin-left: 0.7rem;
@@ -55,6 +70,8 @@ const NavItems = styled.div`
 margin-top: 1rem;
 margin-right: 2rem;
 z-index: 1;
+
+
 a{
     color: black; 
     text-decoration: none;
@@ -69,6 +86,7 @@ display: inline-block;
 height: 100%;
 position: fixed;
 z-index: 1;
+
 
 img{
     margin-top: -0.5rem;
@@ -126,13 +144,16 @@ const PageHeader = ({children}) => {
                </Left>
                <Right>
                    <NavItems>
-                   <a href="/contact" className="contact">Contact</a>    
+                   {/* <a href="/contact" className="contact">Contact
+                   </a>     */}
                    <DropDown>
                     <img src={dots} width="25px" height="25px"></img>
                     <div className="content">
                     <a href="/about">About Us</a>
                     <a href="/customwork">Custom Designs</a>
                     <a href="/gallery">Rod Gallery</a>
+                    <a href="/contact" className="hidden">Contact
+                   </a>  
                     </div>
                     </DropDown>
           

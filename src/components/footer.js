@@ -17,6 +17,12 @@ font-size: 0.7rem;
 color: black;
 display: flex;
 justify-content: space-between;
+
+@media only screen and (max-width: 600px){
+ display: flex;
+ flex-direction: column;
+
+}
 /* margin-top: 1rem; */
 `
 const Left = styled.div`
@@ -25,6 +31,17 @@ flex-direction: column;
 left: 0;
 margin-top: 0.5rem;
 margin-left: 1rem;
+@media only screen and (max-width: 600px){
+ flex-direction: row;
+ margin: 0.5;
+ /* margin-left: 2rem; */
+ justify-content: center;
+ p:last-child{
+    margin-top: 0 !important;
+    margin-left: 0.7rem !important;
+   
+}
+}
 
 color: black;
 p:last-child{
@@ -38,6 +55,9 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin-top: 0.5rem;
+@media only screen and (max-width: 600px){
+    justify-content: center;
+}
 
 a:hover{
     transform: scale(1.3);

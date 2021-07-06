@@ -7,7 +7,10 @@ import { useStaticQuery } from 'gatsby'
 const Content = styled.div`
 height: 75vw;
 z-index: 3;
-
+@media only screen and (max-width: 600px){
+  height: 100% !important;
+margin-bottom: 4rem !important;
+}
 /* margin-top: 10rem; */
 
 `

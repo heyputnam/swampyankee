@@ -3,8 +3,21 @@
     width: 39rem;
 
 
-}
 
+}
+@media only screen and (max-width: 600px){
+   .alice-carousel{
+       width: 15rem !important;
+       justify-content: center !important;
+
+   }
+
+   .img{
+       width: 15rem !important;
+
+   }
+  
+}
 .img{
    justify-content: center;
     width: 36rem;

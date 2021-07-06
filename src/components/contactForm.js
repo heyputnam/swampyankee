@@ -6,32 +6,42 @@ const Container = styled.div`
 
 @media only screen and (max-width: 600px){
 
-  form{
-    margin-bottom: -1rem !important;
+ form{
+    width: 200px !important;
+    height: 18rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
   }
-margin-top: -8rem;
-width: 27rem !important; 
-height: auto;
+
+ /* margin-top: -8rem; */
+/* height: 300px; */
+
+width: 250px !important; 
+margin-top: 0.5rem;
+/* height: auto;
 display: flex;
 flex-direction: column;
-margin-bottom: 4rem !important;
+margin-bottom: 4rem !important; */
 
 hr{
-  width: 100% !important;
-  margin: 0!important;
-}
+  /* width: 100% !important;
+  margin: 0!important; */
+}  
 }
 
 
-margin-top: -4.6rem;
+margin-top: -3.6rem;
 display: flex;
 flex-direction: row;
-position: fixed;
+/* position: fixed; */
 /* align-items: center; */
 padding: 1.6em;
 width: 31rem;
 border-radius: 15px;
-height: 19rem;
+height: auto;
 background: #FAF9F9;
 box-shadow: 2px 2px 15px white;
   filter: drop-shadow(1px 1px 1px black);
@@ -56,7 +66,7 @@ const Feild = styled.div`
     width: auto !important;
     margin-left: 0 !important;
     margin-top: 0.3rem;
- 
+    padding: 0 !important;
   }
 
   .message{
@@ -92,7 +102,7 @@ const Title = styled.label`
 padding-right: 2rem;
 margin-left: 2.2rem;
 @media only screen and (max-width: 600px){
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 `
 
@@ -102,11 +112,11 @@ justify-content: center;
 margin-left: 2rem;
 font-size: 2rem;
 @media only screen and (max-width: 600px){
-  margin-left: 0;
+  /* margin-left: 0;
   button{
     font-size: 0.75rem !important;
     margin-top: 2px !important;
-  }
+  } */
 }
 button{
 background: #DBBF96;
@@ -129,8 +139,8 @@ margin-left: -1rem;
 `
 const ContactForm = () => {
     return(
-        <>
-        <Container>
+      <div style={{height: "80vh"}}>
+        <Container >
 <form action="https://getform.io/f/3957e711-d99f-4781-bc82-e50b8f8070c9" method="POST">
     <Feild>
 <Title>Name:</Title>
@@ -151,7 +161,7 @@ const ContactForm = () => {
 
 </form>
 </Container>
-        </>
+        </div>
     )
 }
 

@@ -5,30 +5,25 @@ import ContactForm from '../components/contactForm'
 import bigTop from '../images/bigTop.jpg'
 import rod from '../images/rod.jpg'
 
-const Group = styled.div`
-display: flex;
-flex-direction: column;
-height: auto;
-margin-bottom: 3rem !important;
-
-`
 
 const Content = styled.div`
 
 @media only screen and (max-width: 600px){
-  margin-top: 25rem !important;
+  /* margin-top: 25rem !important;
   display: flex;
   justify-content: center;
-  margin-bottom: 110% !important;
-
- 
+  margin-bottom: 110% !important; */
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 17% !important;
 
 }
-width: 100%;
+width: auto;
+
 z-index: 1;
-margin-top: 28%;
+margin-top: 10%;
 /* margin-left: 32%; */
-margin-bottom: 40%;
+/* margin-bottom: 40%; */
 /* position: relative; */
 display: flex;
 justify-content: center;
@@ -41,9 +36,9 @@ const Content1 = styled.div`
 /* display: flex;
 flex-direction: column; */
 /* justify-content: center !important; */
-margin-left: 25% !important;
+/* margin-left: 25% !important; */
 /* margin-left: 17%; */
-margin-top: 1rem;
+/* margin-top: 1rem; */
 
 }
 p{
@@ -53,15 +48,20 @@ p{
 h3{
   margin-bottom: 0.3rem;
 }
+
+/* margin-left: 42%; */
+display: flex;
 justify-content: center;
-margin-left: 42%;
+align-items: center;
+flex-direction: column;
 border-radius: 15px;
 font-size: 12px;
-align-items: center;
 margin-top: 1rem;
 background: #DBBF96;
 height: 5rem;
-width: 15rem;
+width: auto;
+margin-left: 2rem;
+margin-right: 2rem;
 position: relative;
 text-align: center;
 box-shadow: 2px 2px 15px white;
@@ -71,19 +71,20 @@ box-shadow: 2px 2px 15px white;
 `
 const BigTop = styled.div`
 @media only screen and (max-width: 600px){
-  h1{
+  /* h1{
     font-size: 2.5rem !important;
     margin-left: 25% !important;
-  }
+  } */
 }
-position: fixed;
+/* position: fixed; */
 top: 0;
 left: 0;
 width: 100%;
-height: 350px;
+height: auto;
 background: black;
 /* justify-content: center; */
-/* display: flex; */
+display: flex;
+flex-direction: column;
 img{
   height: 350px;
   width: 105%;
@@ -91,8 +92,8 @@ img{
 
 }
 h1{
-  margin-top: -15rem;
-  margin-left: 38%;
+  margin-top: -18rem;
+text-align: center;
 color:white;
 font-size: 4rem;
 text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
@@ -102,7 +103,7 @@ const Contact = ({children}) => {
   return(
     <>
 <Layout>
-<Group>
+
 <BigTop>
   <img src={rod}></img>
   <h1>Contact Us: </h1>
@@ -120,7 +121,7 @@ const Contact = ({children}) => {
 <Content>
 <ContactForm/>
 </Content>
-</Group>
+
 </Layout>
 
     </>

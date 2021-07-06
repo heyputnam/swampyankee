@@ -5,22 +5,34 @@ import ContactForm from '../components/contactForm'
 import bigTop from '../images/bigTop.jpg'
 import rod from '../images/rod.jpg'
 
+const Group = styled.div`
+display: flex;
+flex-direction: column;
+height: auto;
+margin-bottom: 3rem !important;
 
+`
 
 const Content = styled.div`
+
 @media only screen and (max-width: 600px){
-  margin-top: 113% !important;
+  margin-top: 25rem !important;
   display: flex;
   justify-content: center;
-  margin-left: 0rem;
+  margin-bottom: 110% !important;
+
+ 
 
 }
 width: 100%;
 z-index: 1;
 margin-top: 28%;
-margin-left: 32%;
-/* height: 5vw; */
-position: relative;
+/* margin-left: 32%; */
+margin-bottom: 40%;
+/* position: relative; */
+display: flex;
+justify-content: center;
+
 
 `
 const Content1 = styled.div`
@@ -29,9 +41,9 @@ const Content1 = styled.div`
 /* display: flex;
 flex-direction: column; */
 /* justify-content: center !important; */
-margin-left: 17.5% !important;
+margin-left: 25% !important;
 /* margin-left: 17%; */
-margin-top: 3rem;
+margin-top: 1rem;
 
 }
 p{
@@ -61,7 +73,7 @@ const BigTop = styled.div`
 @media only screen and (max-width: 600px){
   h1{
     font-size: 2.5rem !important;
-    margin-left: 20% !important;
+    margin-left: 25% !important;
   }
 }
 position: fixed;
@@ -90,7 +102,7 @@ const Contact = ({children}) => {
   return(
     <>
 <Layout>
-
+<Group>
 <BigTop>
   <img src={rod}></img>
   <h1>Contact Us: </h1>
@@ -108,7 +120,7 @@ const Contact = ({children}) => {
 <Content>
 <ContactForm/>
 </Content>
-
+</Group>
 </Layout>
 
     </>

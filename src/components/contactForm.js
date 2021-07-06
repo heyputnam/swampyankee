@@ -5,12 +5,16 @@ import styled from 'styled-components'
 const Container = styled.div`
 
 @media only screen and (max-width: 600px){
+
+  form{
+    margin-bottom: -1rem !important;
+  }
 margin-top: -8rem;
-width: 20rem !important; 
+width: 27rem !important; 
 height: auto;
 display: flex;
 flex-direction: column;
-
+margin-bottom: 4rem !important;
 
 hr{
   width: 100% !important;
@@ -52,6 +56,7 @@ const Feild = styled.div`
     width: auto !important;
     margin-left: 0 !important;
     margin-top: 0.3rem;
+ 
   }
 
   .message{
@@ -98,6 +103,10 @@ margin-left: 2rem;
 font-size: 2rem;
 @media only screen and (max-width: 600px){
   margin-left: 0;
+  button{
+    font-size: 0.75rem !important;
+    margin-top: 2px !important;
+  }
 }
 button{
 background: #DBBF96;

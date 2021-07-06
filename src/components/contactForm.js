@@ -6,7 +6,7 @@ const Container = styled.div`
 
 @media only screen and (max-width: 600px){
 margin-top: -8rem;
-width: auto; 
+width: 20rem !important; 
 height: auto;
 display: flex;
 flex-direction: column;
@@ -49,7 +49,7 @@ const Feild = styled.div`
   display: flex;
   flex-direction: column;
   input{
-    width: 10rem !important;
+    width: auto !important;
     margin-left: 0 !important;
     margin-top: 0.3rem;
   }

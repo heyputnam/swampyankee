@@ -9,10 +9,11 @@ import rod from '../images/rod.jpg'
 
 const Content = styled.div`
 @media only screen and (max-width: 600px){
-  margin-top: 130% !important;
+  margin-top: 113% !important;
   display: flex;
   justify-content: center;
   margin-left: 0rem;
+
 }
 width: 100%;
 z-index: 1;
@@ -25,9 +26,11 @@ position: relative;
 const Content1 = styled.div`
 
 @media only screen and (max-width: 600px){
-display: flex;
-flex-direction: column;
-margin-left: 17%;
+/* display: flex;
+flex-direction: column; */
+/* justify-content: center !important; */
+margin-left: 17.5% !important;
+/* margin-left: 17%; */
 margin-top: 3rem;
 
 }

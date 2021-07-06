@@ -8,7 +8,12 @@ import rod from '../images/rod.jpg'
 
 
 const Content = styled.div`
-
+@media only screen and (max-width: 600px){
+  margin-top: 130% !important;
+  display: flex;
+  justify-content: center;
+  margin-left: 0rem;
+}
 width: 100%;
 z-index: 1;
 margin-top: 28%;
@@ -18,6 +23,14 @@ position: relative;
 
 `
 const Content1 = styled.div`
+
+@media only screen and (max-width: 600px){
+display: flex;
+flex-direction: column;
+margin-left: 17%;
+margin-top: 3rem;
+
+}
 p{
   margin-bottom: 0.3rem;
 }
@@ -42,6 +55,12 @@ box-shadow: 2px 2px 15px white;
 
 `
 const BigTop = styled.div`
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 2.5rem !important;
+    margin-left: 20% !important;
+  }
+}
 position: fixed;
 top: 0;
 left: 0;

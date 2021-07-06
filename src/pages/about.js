@@ -14,17 +14,38 @@ margin-top: 2rem;
 const AboutBlock = styled.div`
 display: flex;
 margin: 10% 10rem 1rem 10rem;
-
+@media only screen and (max-width: 600px){
+  margin: 0 !important;
+  flex-direction: column;
+}
 `
 const Photo = styled.div`
 margin-right: 3rem;
-/* margin-top: 6.5rem; */
+@media only screen and (max-width: 600px){
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+  img{
+    width: 15rem !important;
+  
+  }
+}
+
 img{
     width: 25rem;
 }
 `
 
 const Paragraph = styled.div`
+
+
+@media only screen and (max-width: 600px){
+
+  p{
+  margin-left: 1rem !important;
+  margin-bottom: 5rem;
+  }
+}
 
 p{
 margin-top: -1.5rem;
@@ -39,6 +60,12 @@ margin-top: -4.5rem;
 text-align: center;
 padding-bottom: 1.6rem;
 font-size: 4.5rem;
+
+@media only screen and (max-width: 600px){
+  font-size: 2rem;
+  margin-top: 2rem;
+
+}
 
 `
 const About = ({children}) => {

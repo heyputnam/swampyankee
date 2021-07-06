@@ -1,7 +1,25 @@
 import * as React from 'react'
 import styled from'styled-components'
 const Container = styled.div`
+@media only screen and (max-width: 600px){
+margin: 1rem;
+margin-bottom: 7rem;
+form{
+  width: auto !important;
+}
 
+p{
+margin-bottom: 1rem !important;
+}
+.other{
+  width: 100% !important;
+  margin-bottom: -0.5rem !important;
+}
+button{
+  margin-left: 20% !important;
+}
+
+}
 display: flex;
 
 padding: 3rem;
@@ -33,6 +51,9 @@ input{
   filter: drop-shadow(1px 1px 1px black);
 }
 p{
+  @media only screen and (max-width: 600px){
+  margin-left: 0;
+}
   /* margin-top: -1rem; */
   text-align: left;
  margin-left: -1rem;

@@ -3,6 +3,22 @@ import styled from 'styled-components'
 
 
 const Container = styled.div`
+
+@media only screen and (max-width: 600px){
+margin-top: -8rem;
+width: auto; 
+height: auto;
+display: flex;
+flex-direction: column;
+
+
+hr{
+  width: 100% !important;
+  margin: 0!important;
+}
+}
+
+
 margin-top: -4.6rem;
 display: flex;
 flex-direction: row;
@@ -28,6 +44,22 @@ hr{
 `
 
 const Feild = styled.div`
+@media only screen and (max-width: 600px){
+
+  display: flex;
+  flex-direction: column;
+  input{
+    width: 10rem !important;
+    margin-left: 0 !important;
+    margin-top: 0.3rem;
+  }
+
+  .message{
+    height: 3rem !important;
+  }
+
+
+}
 display: flex;
 flex-direction: row;
 margin-bottom: 1.5rem;
@@ -54,6 +86,9 @@ input{
 const Title = styled.label`
 padding-right: 2rem;
 margin-left: 2.2rem;
+@media only screen and (max-width: 600px){
+  margin-left: 0;
+}
 `
 
 const Submit = styled.div`
@@ -61,7 +96,9 @@ display: flex;
 justify-content: center;
 margin-left: 2rem;
 font-size: 2rem;
-
+@media only screen and (max-width: 600px){
+  margin-left: 0;
+}
 button{
 background: #DBBF96;
 font-size: 1rem;
